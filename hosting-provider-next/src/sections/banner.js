@@ -14,7 +14,7 @@ import {
 import { useState } from 'react';
 import { rgba } from 'polished';
 import Image from 'components/image';
-import serverRack from 'assets/images/server-rack.png';
+import serverRack from 'assets/images/BNPLflow.gif';
 
 const tlds = [
   {
@@ -53,34 +53,25 @@ const Banner = () => {
     <Box as="section" id="home" sx={styles.section}>
       <Container>
         <Box sx={styles.grid}>
-          <Box as="form" sx={styles.domainCard} onSubmit={handleSubmit}>
-            <Heading>Built your business with a website</Heading>
-            <Flex sx={styles.inputGroup}>
-              <Label htmlFor="domainName" variant="styles.srOnly">
-                Your Domain Name
-              </Label>
-              <Input
-                type="text"
-                id="domainName"
-                value={state.domainName}
-                onChange={handleChange}
-                placeholder="Your domain name"
-              />
-              <Label htmlFor="tld" variant="styles.srOnly">
-                Select TLD
-              </Label>
-              <Select id="tld" defaultValue={state.tld} onChange={handleChange}>
-                {tlds.map((tld, i) => (
-                  <option key={i}>{tld.label}</option>
-                ))}
-              </Select>
-            </Flex>
-            <Button type="submit" variant="primary" sx={styles.submit}>
-              Start for free
-            </Button>
-            <Text as="p" sx={styles.note}>
-              No credit card required.
+        <Box sx={styles.content}>
+            <Heading sx={styles.title}>
+            Building Blocks for the future of BNPL payments
+            </Heading>
+            <Text as="p" sx={styles.summary}>
+            We facilitate payments from buy now-pay later solutions at offline and online stores through QR
             </Text>
+            <Flex sx={styles.buttonGroup}>
+              <Button
+                variant="text"
+                sx={{
+                  ...styles.joinCommunity,
+                  backgroundColor: state.isSticky ? 'primary' : '#bdf6ff',
+                  color: state.isSticky ? 'white' : '#0a80ca',
+                }}
+              >
+                Request Demo
+              </Button>
+            </Flex>
           </Box>
           <Box as="figure" sx={styles.illustration}>
             <Image src={serverRack} loading="lazy" alt="sever-rack" />
@@ -95,9 +86,45 @@ export default Banner;
 
 const styles = {
   section: {
-    backgroundColor: 'primary',
+    backgroundColor: '#0a80ca',
     pt: [17, null, null, 20, null],
     pb: [6, null, null, 12, 16],
+  },
+  content: {
+    marginTop: [null, null, null, null, null, -16],
+    maxWidth: [null, null, null, 560, 'none'],
+    m: [null, null, null, '0 auto', 'unset'],
+  },
+  title: {
+    // color: 'heading',
+    // fontWeight: 1200,
+    // fontSize: [5, null, null, 10, null, null, 11],
+    // lineHeight: 1.53,
+    // letterSpacing: ['-0.5px', null, null, '-1px'],
+    // textAlign: ['center', null, null, null, 'left'],
+    // span: {
+    //   backgroundSize: 'cover',
+    //   px: 2,
+    // },
+    // display: inline-block,
+marginTop: 40,
+// marginBottom: 0px,
+// font-family: Poppins, sans-serif,
+color: '#ffffff',
+fontSize: 58,
+// lineHeight: 78,
+// fontWeight: 600,
+// textAlign: left,
+// textDecoration: none,
+// textTransform: none,
+  },
+  summary: {
+    color: 'Secondary',
+    fontSize: 24,
+    lineHeight: [1.86, null, null, null, 1.86, 2.25],
+    maxWidth: 600,
+    m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
+    textAlign: ['center', null, null, null, 'left'],
   },
   grid: {
     gap: ['30px 60px', null, null, null, '30px 40px', '30px 60px'],
@@ -110,7 +137,7 @@ const styles = {
       null,
       null,
       'repeat(2, 1fr)',
-      '510px 1fr',
+      '710px 1fr',
     ],
   },
   domainCard: {

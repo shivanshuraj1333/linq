@@ -3,7 +3,7 @@ import { jsx, Box, Flex, Container, Button } from 'theme-ui';
 import { Fragment, useState } from 'react';
 import Sticky from 'react-stickynode';
 import Logo from 'components/logo';
-import TopBar from 'components/topbar';
+// import TopBar from 'components/topbar';
 import LockIcon from 'components/icons/lock';
 import HamburgerMenu from 'components/hamburger';
 import Navbar from './navbar';
@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <Fragment>
-      <TopBar />
+      {/* <TopBar /> */}
       <Sticky
         enabled={true}
         top={0}
@@ -55,7 +55,7 @@ export default function Header() {
               isMobile={state.isMobileMenu}
               handleCloseMenu={handleCloseMenu}
             />
-            <Flex sx={styles.buttonGroup}>
+            {/* <Flex sx={styles.buttonGroup}>
               <Button
                 variant="text"
                 sx={{
@@ -76,7 +76,7 @@ export default function Header() {
               >
                 Join Community
               </Button>
-            </Flex>
+            </Flex> */}
 
             <HamburgerMenu
               sx={styles.hamburger}
@@ -99,7 +99,7 @@ const styles = {
     py: 4,
     transition: 'all 0.3s ease-in-out 0s',
     '&.is-sticky': {
-      backgroundColor: 'white',
+      backgroundColor: '#bdf6ff',
       boxShadow: '0 6px 13px rgba(38,78,118,0.1)',
       paddingTop: '15px',
       paddingBottom: '15px',

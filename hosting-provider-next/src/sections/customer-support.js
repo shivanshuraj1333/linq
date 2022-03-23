@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Grid, Button, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
-import support from 'assets/images/support.png';
+import support from 'assets/images/API-engine-final.gif';
 
 const list = [
   'Medical and vision',

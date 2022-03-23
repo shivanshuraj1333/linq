@@ -24,14 +24,14 @@ export default function IndexPage() {
         />
         <Banner />
         <Services />
-        <PremiumFeature />
+        {/* <PremiumFeature /> */}
         <UltimateFeatures />
         <CustomerSupport />
-        <Pricing />
+        {/* <Pricing /> */}
         <Testimonials />
         <Blog />
         <Faq />
-        <Support />
+        {/* <Support /> */}
       </Layout>
     </ThemeProvider>
   );

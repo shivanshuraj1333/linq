@@ -26,18 +26,19 @@ export default CallToAction;
 
 const styles = {
   section: {
+    backgroundColor: `#68ebff70`,
     position: 'relative',
-    zIndex: 1,
-    ':before': {
-      backgroundColor: '#F9FAFC',
-      bottom: 0,
-      content: `''`,
-      height: '50%',
-      position: 'absolute',
-      left: 0,
-      right: 0,
-      zIndex: '-1',
-    },
+    // zIndex: 1,
+    // ':before': {
+    //   backgroundColor: '#F9FAFC',
+    //   bottom: 0,
+    //   content: `''`,
+    //   height: '50%',
+    //   position: 'absolute',
+    //   left: 0,
+    //   right: 0,
+    //   zIndex: '-1',
+    // },
   },
   container: {
     px: [0, '0 !important', '30px !important'],
@@ -51,6 +52,7 @@ const styles = {
       '55px 30px 60px',
       '55px 50px 60px',
     ],
+    // backgroundColor: '#183656',
     backgroundColor: '#183656',
     backgroundImage: ['none', null, null, `url(${BgShape})`],
     backgroundRepeat: 'no-repeat',

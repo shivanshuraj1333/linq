@@ -1,119 +1,125 @@
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
-import Slider from 'react-slick';
-import dynamic from 'next/dynamic';
-const Testimonial = dynamic(() => import('components/cards/testimonial'), {
-  ssr: false,
-});
-import author from 'assets/images/testimonial.png';
-import { rgba } from 'polished';
+import { jsx, Box, Container, Grid, Button, Heading, Text } from 'theme-ui';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
+import Image from 'components/image';
+import support from 'assets/images/user_confirmation.png';
 
-const data = [
-  {
-    id: 1,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Uber',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
-  {
-    id: 2,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Google',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
-  {
-    id: 3,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Microsoft',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
+const list = [
+  'Medical and vision',
+  'Life insurance',
+  'HSAs and FSAs',
+  'Commuter benefits',
 ];
 
-const Testimonials = () => {
-  const settings = {
-    arrows: false,
-    dots: true,
-    fade: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+const CustomerSupport = () => {
   return (
-    <Box as="section" id="testimonials" sx={styles.section}>
+    <Box as="section" sx={styles.section}>
       <Container>
-        <Slider {...settings} sx={styles.carousel}>
-          {data.map((item) => (
-            <Testimonial key={item.id} testimonial={item} />
-          ))}
-        </Slider>
+        <Box sx={styles.grid}>
+          <Box sx={styles.content}>
+            <Heading sx={styles.title}>
+              Customer support is our main priority with their hundred percent
+              satisfaction.
+            </Heading>
+            <Text as="p" sx={styles.summary}>
+              Get your tests delivered at let home collect sample from the
+              victory of the managements that supplies best design system
+              guidelines ever.
+            </Text>
+
+            <Grid sx={styles.list} as="ul">
+              {list.map((item, i) => (
+                <Text as="li" key={i}>
+                  <IoIosCheckmarkCircle
+                    sx={{ color: 'secondary', mr: 2 }}
+                    size="20px"
+                  />
+                  {item}
+                </Text>
+              ))}
+            </Grid>
+          </Box>
+          <Box sx={styles.illustration}>
+            <Image src={support} loading="lazy" alt="support" />
+          </Box>
+        </Box>
       </Container>
     </Box>
   );
 };
 
-export default Testimonials;
+export default CustomerSupport;
 
 const styles = {
   section: {
-    pt: [6, null, null, 0],
-    backgroundColor: '#F0F3F8',
+    backgroundColor: '#68ebff70',
+    pt: [8, null, null, 6, null, 14, 16],
+    pb: [null, null, null, 8, 0],
+  },
+  grid: {
+    gap: [null, null, null, null, '0 10px'],
+    display: ['flex', null, null, 'grid'],
+    flexDirection: ['column-reverse', null, null, 'unset'],
+    alignItems: 'center',
+    gridTemplateColumns: [
+      '1fr',
+      null,
+      null,
+      '1fr',
+      '470px 1fr',
+      '600px 1fr',
+      '400px 1fr',
+    ],
+  },
+  illustration: {
+    textAlign: 'center',
     position: 'relative',
-    '@media only screen and (min-width:767px)': {
-      ':before': {
-        backgroundColor: 'white',
-        content: `''`,
-        minHeight: [null, null, null, 30, 70, 100],
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        right: 0,
-      },
+    display: 'flex',
+    alignItems: 'center',
+    mt: [2, null, null, 0, 4, 0],
+    img: {
+      maxWidth: ['100%', null, null, null, null, '100%'],
     },
   },
-  carousel: {
-    '.slick-dots': {
-      display: 'flex !important',
-      margin: 0,
-      padding: 0,
-      bottom: [6, null, null, 8, 10],
-      listStyle: 'none',
-      position: 'absolute',
-      left: [
-        'calc(50% + 14px)',
-        null,
-        null,
-        'calc(50% + 62px)',
-        'calc(50% + 14px)',
-        'calc(50% + 60px)',
-        'calc(50% + 14px)',
-      ],
-      transform: 'translateX(-50%)',
-      button: {
-        backgroundColor: rgba('#5B2B9D', 0.2),
-        border: 0,
-        outline: 0,
-        borderRadius: 5,
-        cursor: 'pointer',
-        height: [3, null, null, 6],
-        width: [10, null, null, 15],
-        overflow: 'hidden',
-        textIndent: '-9999em',
-        transition: 'all 0.3s ease-in-out 0s',
-      },
-      '.slick-active button': {
-        backgroundColor: 'primary',
-        width: [20, null, null, 30],
-      },
+  content: {
+    marginTop: [null, null, null, null, null, -16],
+    maxWidth: [null, null, null, 560, 'none'],
+    m: [null, null, null, '0 auto', 'unset'],
+  },
+  title: {
+    color: 'heading',
+    fontWeight: 500,
+    fontSize: [5, null, null, 10, null, null, 11],
+    lineHeight: 1.53,
+    letterSpacing: ['-0.5px', null, null, '-1px'],
+    textAlign: ['center', null, null, null, 'left'],
+    span: {
+      backgroundSize: 'cover',
+      px: 2,
     },
+  },
+  summary: {
+    color: 'textSecondary',
+    fontSize: [1, null, null, 2, '15px', 2],
+    lineHeight: [1.86, null, null, null, 1.86, 2.25],
+    maxWidth: 470,
+    m: [null, null, null, '20px auto 0', '15px 0 0', null, 'unset'],
+    textAlign: ['center', null, null, null, 'left'],
+  },
+  list: {
+    gap: '0 18px',
+    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 200px)'],
+    justifyContent: [null, null, null, 'center', 'unset'],
+    listStyle: 'none',
+    mt: [4, null, null, 5, 4, 5],
+    p: 0,
     li: {
+      fontSize: [0, 1, null, 2, '15px', 2],
+      fontWeight: 500,
+      alignItems: 'center',
+      color: 'textSecondary',
       display: 'flex',
-      '+ li': {
-        ml: '6px',
-      },
+      lineHeight: [2.81, null, null, null, 2.2, 2.81],
     },
   },
 };

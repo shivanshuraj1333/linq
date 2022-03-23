@@ -12,22 +12,22 @@ export const menuItems = [
         path: '#!',
         label: 'Support Center',
       },
-      {
-        path: '#!',
-        label: 'Customer Support',
-      },
-      {
-        path: '#!',
-        label: 'About Us',
-      },
-      {
-        path: '#!',
-        label: 'Copyright',
-      },
-      {
-        path: '#!',
-        label: 'Popular Campaign',
-      },
+      // {
+      //   path: '#!',
+      //   label: 'Customer Support',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'About Us',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Copyright',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Popular Campaign',
+      // },
     ],
   },
   {
@@ -38,22 +38,22 @@ export const menuItems = [
         path: '#!',
         label: 'Return Policy ',
       },
-      {
-        path: '#!',
-        label: 'Privacy Policy',
-      },
-      {
-        path: '#!',
-        label: 'Terms & Conditions',
-      },
-      {
-        path: '#!',
-        label: 'Site Map',
-      },
-      {
-        path: '#!',
-        label: 'Store Hours',
-      },
+      // {
+      //   path: '#!',
+      //   label: 'Privacy Policy',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Terms & Conditions',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Site Map',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Store Hours',
+      // },
     ],
   },
   {
@@ -64,22 +64,22 @@ export const menuItems = [
         path: '#!',
         label: 'Press inquiries',
       },
-      {
-        path: '#!',
-        label: 'Social media ',
-      },
-      {
-        path: '#!',
-        label: 'directories',
-      },
-      {
-        path: '#!',
-        label: 'Images & B-roll',
-      },
-      {
-        path: '#!',
-        label: 'Permissions',
-      },
+      // {
+      //   path: '#!',
+      //   label: 'Social media ',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'directories',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Images & B-roll',
+      // },
+      // {
+      //   path: '#!',
+      //   label: 'Permissions',
+      // },
     ],
   },
   {
@@ -91,21 +91,21 @@ export const menuItems = [
         icon: facebook,
         label: 'Facebook',
       },
-      {
-        path: '#!',
-        icon: twitter,
-        label: 'Twitter',
-      },
-      {
-        path: '#!',
-        icon: github,
-        label: 'Github',
-      },
-      {
-        path: '#!',
-        icon: dribbble,
-        label: 'Dribbble',
-      },
+      // {
+      //   path: '#!',
+      //   icon: twitter,
+      //   label: 'Twitter',
+      // },
+      // {
+      //   path: '#!',
+      //   icon: github,
+      //   label: 'Github',
+      // },
+      // {
+      //   path: '#!',
+      //   icon: dribbble,
+      //   label: 'Dribbble',
+      // },
     ],
   },
 ];

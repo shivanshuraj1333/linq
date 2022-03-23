@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     ques: 'What are some tips when choosing a name?',
-    ans: `Get your website tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.`,
+    ans: `Get your website tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.`,
   },
   {
     id: 3,
@@ -23,22 +23,17 @@ const data = [
   {
     id: 4,
     ques: 'Can I upgrade or downgrade my web hosting plan',
-    ans: `The pricing made me a little hesitant at first but I have been pleasantly surprised by the level of care given by CometNine.`,
+    ans: `The pricing made me a little hesitant at first but I have been pleasantly surprised by the level of care given by CometNine. All premium functional are included here with updates.`,
   },
   {
     id: 5,
     ques: 'How do I upgrade the storage capacity of my hosting plan?',
-    ans: `Stop your viewers from getting distracted. Publish videos to your own Channel and rest easy knowing viewers won’t be annoyed by ads or pulled down a rabbit hole of unrelated videos.`,
+    ans: `Stop your viewers from getting distracted. Publish videos to your own Channel and rest easy knowing viewers won’t be annoyed by ads or pulled.`,
   },
   {
     id: 6,
     ques: 'What is in InMotion Hosting’s uptime rate?',
     ans: `Designed with beginners in mind and packed with advanced features developers will love. Start with a quick and simple install`,
-  },
-  {
-    id: 7,
-    ques: 'Learn from community on Brandwagon',
-    ans: `Brian Halligan knows that you need more than a great product to have a great brand. Hear his thoughts & score a peek at our wagon.`,
   },
 ];
 
@@ -67,6 +62,7 @@ export default Faq;
 
 const styles = {
   section: {
+    backgroundColor: '#68ebff70',
     pt: [8, null, null, null, 10, 14],
     pb: [null, null, null, null, null, null, 10, 6],
   },

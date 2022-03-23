@@ -14,37 +14,19 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: 'ultimate Email  subscription',
+    title: 'Aniket Singh',
     description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
   {
     id: 2,
     icon: icon2,
-    title: 'Bolt Performance',
+    title: 'Harshit Bansal',
     description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
   {
     id: 3,
     icon: icon3,
-    title: 'Secure Transaction',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
-  },
-  {
-    id: 4,
-    icon: icon4,
-    title: 'Multiple Options',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
-  },
-  {
-    id: 5,
-    icon: icon5,
-    title: '5 Star Rating service',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
-  },
-  {
-    id: 6,
-    icon: icon6,
-    title: 'Integrated with Shopify',
+    title: 'Shivanshu Raj Shrivastava',
     description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
 ];
@@ -72,7 +54,7 @@ export default UltimateFeatures;
 
 const styles = {
   section: {
-    backgroundColor: '#F9FAFC',
+    backgroundColor: '#68ebff70',
     pt: [8, null, null, null, 10, 14],
     pb: [8, null, null, null, 15, 16, 19],
     position: 'relative',

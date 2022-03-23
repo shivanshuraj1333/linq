@@ -40,9 +40,9 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    backgroundColor: '#F9FAFC',
-    pt: [8, null, null, 10],
-    pb: [8, null, null, 15],
+    backgroundColor: '#0a80ca',
+    pt: [8, null, null, 2],
+    pb: [8, null, null, 2],
   },
   footerTopInner: {
     gap: [30, null, 50, '20px 50px', 17, 50],
