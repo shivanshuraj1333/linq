@@ -5,8 +5,8 @@ import Image from 'components/image';
 import support from 'assets/images/merchantoffers.png';
 
 const list = [
-  'Easy access to all offers',
-  'Get personalised discounts',
+  'Manage offers accross apps',
+  'Gain visibility on offers',
 ];
 
 const CustomerSupport = () => {
@@ -19,10 +19,10 @@ const CustomerSupport = () => {
           </Box>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Avail offers made just for you
+              Easily add and update BNPL offers
             </Heading>
             <Text as="p" sx={styles.summary}>
-              Get the best deals from merchants right in your BNPL app
+              Merchants can easily manage various offers accross all BNPL apps through our merchant app
             </Text>
 
             <Grid sx={styles.list} as="ul">
@@ -63,7 +63,7 @@ const styles = {
       '1fr',
       '470px 1fr',
       '600px 1fr',
-      '760px 1fr',
+      '650px 1fr',
     ],
   },
   illustration: {
