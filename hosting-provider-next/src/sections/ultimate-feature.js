@@ -15,19 +15,19 @@ const data = [
     id: 1,
     icon: icon1,
     title: 'Aniket Singh',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    // description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
   {
     id: 2,
-    icon: icon2,
+    icon: icon1,
     title: 'Harshit Bansal',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    // description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
   {
     id: 3,
-    icon: icon3,
+    icon: icon1,
     title: 'Shivanshu Raj Shrivastava',
-    description: `Get your info tests delivered at home collect a sample from the your task.`,
+    // description: `Get your info tests delivered at home collect a sample from the your task.`,
   },
 ];
 
@@ -37,8 +37,7 @@ const UltimateFeatures = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Product features"
-          title="Ultimate features that works"
+          title="Meet our team"
         />
         <Box sx={styles.features}>
           {data?.map((item) => (
@@ -54,7 +53,7 @@ export default UltimateFeatures;
 
 const styles = {
   section: {
-    backgroundColor: '#68ebff70',
+    backgroundColor: 'white',
     pt: [8, null, null, null, 10, 14],
     pb: [8, null, null, null, 15, 16, 19],
     position: 'relative',

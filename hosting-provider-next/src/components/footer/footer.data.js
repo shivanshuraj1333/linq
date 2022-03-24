@@ -10,7 +10,7 @@ export const menuItems = [
     items: [
       {
         path: '#!',
-        label: 'Support Center',
+        label: 'Products',
       },
       // {
       //   path: '#!',
@@ -32,11 +32,11 @@ export const menuItems = [
   },
   {
     id: 3,
-    title: 'Our Information',
+    title: 'Read about us',
     items: [
       {
         path: '#!',
-        label: 'Return Policy ',
+        label: 'Blogs',
       },
       // {
       //   path: '#!',
@@ -58,11 +58,11 @@ export const menuItems = [
   },
   {
     id: 4,
-    title: 'My Account',
+    title: 'Talk with us',
     items: [
       {
         path: '#!',
-        label: 'Press inquiries',
+        label: 'Contact',
       },
       // {
       //   path: '#!',
@@ -88,8 +88,8 @@ export const menuItems = [
     items: [
       {
         path: '#!',
-        icon: facebook,
-        label: 'Facebook',
+        icon: github,
+        label: 'Github',
       },
       // {
       //   path: '#!',

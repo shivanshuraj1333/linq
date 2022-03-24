@@ -13,6 +13,7 @@ export default function Logo({ isSticky, footer, ...props }) {
       {/* <LogoSvg white={!isSticky} />
        */}
       <Image src={tranparentLogo} />
+      <h1 style={{ color: "black" }}>Lin</h1><h1 style={{ color: "blue" }}>Q</h1>
     </Link>
   );
 }

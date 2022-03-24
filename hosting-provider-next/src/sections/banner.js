@@ -69,7 +69,7 @@ const Banner = () => {
                   color: state.isSticky ? 'white' : '#0a80ca',
                 }}
               >
-                Request Demo
+                Get early access
               </Button>
             </Flex>
           </Box>

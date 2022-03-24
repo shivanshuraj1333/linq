@@ -5,26 +5,26 @@ export default [
   },
   {
     path: 'services',
-    label: 'Services',
+    label: 'Products',
   },
   {
     path: 'features',
     label: 'Features',
   },
-  {
-    path: 'pricing',
-    label: 'Pricing',
-  },
-  {
-    path: 'testimonials',
-    label: 'Testimonials',
-  },
+  // {
+  //   path: 'pricing',
+  //   label: 'Pricing',
+  // },
+  // {
+  //   path: 'testimonials',
+  //   label: 'Testimonials',
+  // },
   {
     path: 'blog',
     label: 'Blog',
   },
-  {
-    path: 'faq',
-    label: 'Faq',
-  },
+  // {
+  //   path: 'faq',
+  //   label: 'Faq',
+  // },
 ];

@@ -43,8 +43,8 @@ const Services = () => {
     <Box as="section" id="services" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Ideal solutions for you"
-          title="Didn’t find what you were looking for?"
+          slogan="API stack for BNPL providers"
+          title="Grow your merchant network by integrating LinQ APIs"
         />
         <Box sx={styles.grid}>
           {services.map((service, i) => (

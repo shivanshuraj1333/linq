@@ -26,7 +26,7 @@ export default CallToAction;
 
 const styles = {
   section: {
-    backgroundColor: `#68ebff70`,
+    backgroundColor: `white`,
     position: 'relative',
     // zIndex: 1,
     // ':before': {
@@ -53,7 +53,7 @@ const styles = {
       '55px 50px 60px',
     ],
     // backgroundColor: '#183656',
-    backgroundColor: '#183656',
+    backgroundColor: '#0a80ca99',
     backgroundImage: ['none', null, null, `url(${BgShape})`],
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '60% center',

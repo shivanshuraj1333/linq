@@ -27,19 +27,19 @@ export default SectionHeading;
 const styles = {
   heading: {
     textAlign: 'center',
-    maxWidth: 660,
+    maxWidth: 1200,
     margin: '0 auto 50px',
   },
   slogan: {
-    color: 'primary',
+    color: '#0a80ca',
     fontWeight: 500,
-    fontSize: 2,
+    fontSize: 5,
     lineHeight: 2.5,
   },
   title: {
     color: 'heading',
     fontWeight: 600,
-    fontSize: [4, null, null, 6],
+    fontSize: 36,
     lineHeight: [1.33, 1.33, 1.5],
     letterSpacing: [null, null, null, 'heading'],
     img: {

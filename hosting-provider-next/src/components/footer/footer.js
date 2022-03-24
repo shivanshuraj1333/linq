@@ -18,7 +18,7 @@ export default function Footer() {
             <Box sx={styles.about}>
               <Box sx={styles.logo}>
                 <Logo />
-                <h3>Startup Landing</h3>
+                {/* <h3>LinQ</h3> */}
               </Box>
               <Box sx={styles.terms}>
                 <Link path="#!">Terms of use</Link>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <Link path="#!">Privacy</Link>
               </Box>
               <Text as="p" sx={styles.copyright}>
-                Copyright by {new Date().getFullYear()} RedQ, Inc
+                Copyright by {new Date().getFullYear()} LinQ
               </Text>
             </Box>
             {menuItems.map(({ id, title, items }) => (

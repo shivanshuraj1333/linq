@@ -55,7 +55,7 @@ export default function Header() {
               isMobile={state.isMobileMenu}
               handleCloseMenu={handleCloseMenu}
             />
-            {/* <Flex sx={styles.buttonGroup}>
+            <Flex sx={styles.buttonGroup}>
               <Button
                 variant="text"
                 sx={{
@@ -70,13 +70,13 @@ export default function Header() {
                 variant="text"
                 sx={{
                   ...styles.joinCommunity,
-                  backgroundColor: state.isSticky ? 'primary' : 'white',
-                  color: state.isSticky ? 'white' : 'primary',
+                  backgroundColor: state.isSticky ? 'blue' : '#bdf6ff',
+                  color: state.isSticky ? 'white' : '#0a80ca',
                 }}
               >
-                Join Community
+                Sign up
               </Button>
-            </Flex> */}
+            </Flex>
 
             <HamburgerMenu
               sx={styles.hamburger}
