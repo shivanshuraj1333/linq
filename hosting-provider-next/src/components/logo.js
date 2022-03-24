@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Link } from 'components/link';
 import Image from 'components/image';
-import tranparentLogo from '../assets/images/logo/logo-trans.png';
+import tranparentLogo from '../assets/images/logo/logo-transparent.png';
 // import logo from '../assets/images/logo/logo.jpg';
 
 // import LogoSvg from 'components/icons/logo';
