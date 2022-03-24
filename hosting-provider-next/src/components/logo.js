@@ -1,23 +1,30 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Link } from 'components/link';
-import LogoSvg from 'components/icons/logo';
+import Image from 'components/image';
+import tranparentLogo from '../assets/images/logo/logo-trans.png';
+// import logo from '../assets/images/logo/logo.jpg';
+
+// import LogoSvg from 'components/icons/logo';
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <LogoSvg white={!isSticky} />
+      {/* <LogoSvg white={!isSticky} />
+       */}
+      <Image src={tranparentLogo} />
     </Link>
   );
 }
+
 const styles = {
   logo: {
     alignItems: 'center',
     cursor: 'pointer',
     display: 'inline-flex',
-    svg: {
-      height: 'auto',
-      width: [128, null, '100%'],
+    Img: {
+      height: '40px',
+      width: [128, null, '100%']
     },
   },
 };

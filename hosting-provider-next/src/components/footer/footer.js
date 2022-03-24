@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from 'theme-ui';
 import { rgba } from 'polished';
-import Logo from 'components/icons/logo';
+import Logo from 'components/logo';
 import { Link } from 'components/link';
 import CallToAction from 'sections/call-to-action';
 import Widget from './widget';
@@ -18,6 +18,7 @@ export default function Footer() {
             <Box sx={styles.about}>
               <Box sx={styles.logo}>
                 <Logo />
+                <h3>Startup Landing</h3>
               </Box>
               <Box sx={styles.terms}>
                 <Link path="#!">Terms of use</Link>
@@ -43,6 +44,12 @@ const styles = {
     backgroundColor: '#0a80ca',
     pt: [8, null, null, 2],
     pb: [8, null, null, 2],
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    h3: {
+      margin: '0px',
+    }
   },
   footerTopInner: {
     gap: [30, null, 50, '20px 50px', 17, 50],
