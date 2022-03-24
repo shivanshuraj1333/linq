@@ -53,7 +53,7 @@ const styles = {
       '55px 50px 60px',
     ],
     // backgroundColor: '#183656',
-    backgroundColor: '#0a80ca99',
+    backgroundColor: '#183656',
     backgroundImage: ['none', null, null, `url(${BgShape})`],
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '60% center',
