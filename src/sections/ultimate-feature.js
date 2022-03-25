@@ -3,9 +3,9 @@ import { jsx, Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Feature from 'components/cards/feature';
 
-import icon1 from 'assets/images/services/1.png';
-import icon2 from 'assets/images/services/2.png';
-import icon3 from 'assets/images/services/3.png';
+import icon1 from 'assets/images/aniket.png';
+import icon2 from 'assets/images/harshit.png';
+import icon3 from 'assets/images/shivanshu.png';
 import icon4 from 'assets/images/services/4.png';
 import icon5 from 'assets/images/services/5.png';
 import icon6 from 'assets/images/services/6.png';
@@ -15,19 +15,19 @@ const data = [
     id: 1,
     icon: icon1,
     title: 'Aniket Singh',
-    // description: `Get your info tests delivered at home collect a sample from the your task.`,
+    description: `Co-founder and CTO`,
   },
   {
     id: 2,
-    icon: icon1,
+    icon: icon2,
     title: 'Harshit Bansal',
-    // description: `Get your info tests delivered at home collect a sample from the your task.`,
+    description: `Co-founder and COO`,
   },
   {
     id: 3,
-    icon: icon1,
+    icon: icon3,
     title: 'Shivanshu Raj Shrivastava',
-    // description: `Get your info tests delivered at home collect a sample from the your task.`,
+    description: `Co-founder and CEO`,
   },
 ];
 
