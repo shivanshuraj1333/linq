@@ -13,6 +13,7 @@ import Merchantapp from 'sections/merchantapp';
 import Merchantoffers from 'sections/merchantoffers';
 import PremiumFeature from 'sections/premium-feature';
 import UltimateFeatures from 'sections/ultimate-feature';
+import YoutubeEmbed from 'sections/youtube';
 import CustomerSupport from 'sections/customer-support';
 import Pricing from 'sections/pricing';
 import Testimonials from 'sections/testimonials';
@@ -30,6 +31,7 @@ export default function IndexPage() {
         />
         <Banner />
         {/* <Services /> */}
+        <YoutubeEmbed />
         <Linqapi />
         <Qr />
         <Scan />

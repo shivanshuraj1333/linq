@@ -2,57 +2,50 @@
 import { jsx, Box, Container, Grid, Button, Heading, Text } from 'theme-ui';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 import Image from 'components/image';
-import support from 'assets/images/merchantoffers.png';
+// import support from 'assets/images/qrflow.png';
 
-const list = [
-  'Manage offers accross apps',
-  'Gain visibility on offers',
-];
-
-const CustomerSupport = () => {
+const YoutubeEmbed = () => {
   return (
     <Box as="section" sx={styles.section}>
       <Container>
         <Box sx={styles.grid}>
-          <Box sx={styles.illustration}>
-            <Image src={support} loading="lazy" alt="support" />
+          <Box sx={styles.videoresponsive}>
+		  <iframe
+			width="850"
+			height="480"
+			src={`https://www.youtube.com/embed/tc2_5sz9Mqw?rel=0`}
+			frameBorder="0"
+			allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowFullScreen
+			title="Embedded youtube"
+			/>
           </Box>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              Easily add and update BNPL offers
+              Watch our product demo
             </Heading>
             <Text as="p" sx={styles.summary}>
-              Merchants can easily manage various offers accross all BNPL apps through our merchant app
-            </Text>
+			LinQ, links merchants and Buy now pay later apps via QR
 
-            <Grid sx={styles.list} as="ul">
-              {list.map((item, i) => (
-                <Text as="li" key={i}>
-                  <IoIosCheckmarkCircle
-                    sx={{ color: 'blue', mr: 2 }}
-                    size="20px"
-                  />
-                  {item}
-                </Text>
-              ))}
-            </Grid>
+            </Text>
           </Box>
+		  <Box></Box>
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default CustomerSupport;
+export default YoutubeEmbed;
 
 const styles = {
   section: {
-	  backgroundColor: '#68ebff70',
+	backgroundColor: '#68ebff70',
     pt: [8, null, null, 6, null, 14, 16],
-    pb: [null, null, null, 8, 0],
+    pb: [null, null, null, 8, 16],
   },
   grid: {
-    gap: [null, null, null, null, '0 10px'],
+    gap: [null, null, null, null, '0 100px'],
     display: ['flex', null, null, 'grid'],
     flexDirection: ['column-reverse', null, null, 'unset'],
     alignItems: 'center',
@@ -66,18 +59,8 @@ const styles = {
       '650px 1fr',
     ],
   },
-  illustration: {
-    textAlign: 'center',
-    position: 'relative',
-    display: 'flex',
-    alignItems: 'center',
-    mt: [2, null, null, 0, 4, 0],
-    img: {
-      maxWidth: ['100%', null, null, null, null, '100%'],
-    },
-  },
   content: {
-    marginTop: [null, null, null, null, null, -16],
+    marginTop: [null, null, null, null, null, -5],
     maxWidth: [null, null, null, 560, 'none'],
     m: [null, null, null, '0 auto', 'unset'],
   },
@@ -116,5 +99,19 @@ const styles = {
       display: 'flex',
       lineHeight: [2.81, null, null, null, 2.2, 2.81],
     },
+  },
+  videoresponsive: {
+	overflow: 'hidden',
+	paddingBottom: '56.25%',
+	position: 'relative',
+	height: '0',
+	iframe: {
+		left: '0',
+		top: '0',
+		height: '100%',
+		width: '100%',
+		position: 'absolute',
+	}
+  
   },
 };
